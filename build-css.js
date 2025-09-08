@@ -20,17 +20,17 @@ async function buildCSS() {
             require('autoprefixer'),
         ]).process(inputCSS, {
             from: './assets/css/input.css',
-            to: './assets/css/output.css'
+            to: './assets/css/styles.css'
         });
         
         // Escrever o resultado
-        fs.writeFileSync('./assets/css/output.css', result.css);
+        fs.writeFileSync('./assets/css/styles.css', result.css);
         
-        const stats = fs.statSync('./assets/css/output.css');
+        const stats = fs.statSync('./assets/css/styles.css');
         const fileSizeInKB = (stats.size / 1024).toFixed(2);
         
         console.log(`✅ CSS compilado com sucesso! Tamanho: ${fileSizeInKB} KB`);
-        console.log(`📁 Arquivo salvo em: ./assets/css/output.css`);
+        console.log(`📁 Arquivo salvo em: ./assets/css/styles.css`);
         
     } catch (error) {
         console.error('❌ Erro ao compilar CSS:', error);
@@ -63,20 +63,20 @@ async function buildMinifiedCSS() {
             require('autoprefixer'),
         ]).process(inputCSS, {
             from: './assets/css/input.css',
-            to: './assets/css/output.css'
+            to: './assets/css/styles.css'
         });
         
         // Minificar CSS
         const minifiedCSS = minifyCSS(result.css);
         
         // Escrever o resultado minificado
-        fs.writeFileSync('./assets/css/output.css', minifiedCSS);
+        fs.writeFileSync('./assets/css/styles.css', minifiedCSS);
         
-        const stats = fs.statSync('./assets/css/output.css');
+        const stats = fs.statSync('./assets/css/styles.css');
         const fileSizeInKB = (stats.size / 1024).toFixed(2);
         
         console.log(`✅ CSS compilado e minificado! Tamanho: ${fileSizeInKB} KB`);
-        console.log(`📁 Arquivo salvo em: ./assets/css/output.css`);
+        console.log(`📁 Arquivo salvo em: ./assets/css/styles.css`);
         
     } catch (error) {
         console.error('❌ Erro ao compilar CSS:', error);

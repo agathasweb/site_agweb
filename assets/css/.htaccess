@@ -1,0 +1,8 @@
+# Forçar content-type correto para arquivos CSS
+<Files "*.css">
+    Header always set Content-Type "text/css"
+    Header always set Cache-Control "public, max-age=31536000"
+</Files>
+
+# Adicionar content-type no AddType também
+AddType text/css .css
