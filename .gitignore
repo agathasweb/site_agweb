@@ -1,0 +1,25 @@
+# Node modules
+node_modules/
+npm-debug.log*
+package-lock.json
+
+# Arquivos de build temporários
+*.tmp
+*.temp
+
+# Logs
+logs
+*.log
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Cache
+.cache/

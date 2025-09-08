@@ -4,26 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Agatha's Web</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'voyia-blue': 'rgb(147, 51, 234)',
-                        'voyia-dark': '#0A0A0A',
-                        'voyia-gray': '#1A1A1A',
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="assets/css/output.css">
 </head>
 <body class="bg-gray-900 text-white min-h-screen">
     <?php include 'components/header.php'; ?>
     
     <main class="pt-20">
-        <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <!-- Seção 1: Título e formulário - fundo #000 -->
+        <section class="bg-black">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
             <div class="text-center mb-16">
                 <h1 class="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-voyia-blue to-voyia-blue bg-clip-text text-transparent">
                     Entre em Contato
@@ -127,7 +116,7 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <?php include 'components/footer.php'; ?>

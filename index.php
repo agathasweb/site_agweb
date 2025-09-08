@@ -5,24 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agatha's Web - Comunicação Inteligente para Empresas</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        'voyia-blue': 'rgb(147, 51, 234)',
-                        'voyia-dark': '#0A0A0A',
-                        'voyia-gray': '#1A1A1A',
-                    },
-                    fontFamily: {
-                        'mono': ['Monaco', 'Menlo', 'Ubuntu Mono', 'monospace'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="assets/css/output.css">
     <style>
         /* Animações personalizadas */
         @keyframes float {
@@ -211,7 +194,7 @@
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="py-24 sm:py-32">
+    <section id="features" class="py-24 sm:py-32 bg-[#0A0A0A]">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-4xl text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -260,7 +243,7 @@
     </section>
 
     <!-- Templates Section -->
-    <section class="py-24 sm:py-32 bg-gradient-to-b from-voyia-gray to-voyia-dark">
+    <section class="py-24 sm:py-32 bg-black">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-4xl text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -302,7 +285,7 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-24 sm:py-32">
+    <section class="py-24 sm:py-32 bg-[#0A0A0A]">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-4xl text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
@@ -357,7 +340,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="py-24 sm:py-32">
+    <section class="py-24 sm:py-32 bg-black">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-4xl text-center">
                 <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">

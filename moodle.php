@@ -4,26 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços Moodle - Agatha's Web</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'voyia-purple': '#8B5CF6',
-                        'voyia-blue': '#3B82F6',
-                        'voyia-gray': '#1F2937',
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="assets/css/output.css">
 </head>
 <body class="bg-gray-900 text-white min-h-screen">
     <?php include 'components/header.php'; ?>
     
     <main class="pt-20">
-        <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <!-- Seção 1: Título - fundo #000 -->
+        <section class="bg-black">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
             <div class="text-center mb-16">
                 <h1 class="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-voyia-purple to-voyia-blue bg-clip-text text-transparent">
                     Serviços Moodle
@@ -32,8 +21,12 @@
                     Especialistas em Moodle há mais de 10 anos. Implementação, customização e suporte completo para sua plataforma educacional.
                 </p>
             </div>
+        </section>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+        <!-- Seção 2: Conteúdo principal - fundo #0A0A0A -->
+        <section class="bg-[#0A0A0A]">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
                 <div>
                     <h2 class="text-3xl font-bold mb-6 text-white">Por que escolher nosso Moodle?</h2>
                     <div class="space-y-4">
@@ -102,8 +95,12 @@
                     </ul>
                 </div>
             </div>
+        </section>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <!-- Seção 3: Cards de serviços - fundo #000 -->
+        <section class="bg-black">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                 <div class="bg-voyia-gray rounded-lg p-6 text-center">
                     <div class="w-16 h-16 bg-gradient-to-r from-voyia-purple to-voyia-blue rounded-full mx-auto mb-4 flex items-center justify-center">
                         <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
@@ -132,8 +129,12 @@
                     <p class="text-gray-300">Seus dados sempre protegidos e seguros</p>
                 </div>
             </div>
+        </section>
 
-            <div class="bg-gradient-to-r from-voyia-purple to-voyia-blue rounded-lg p-8 text-center">
+        <!-- Seção 4: CTA - fundo #0A0A0A -->
+        <section class="bg-[#0A0A0A]">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="bg-gradient-to-r from-voyia-purple to-voyia-blue rounded-lg p-8 text-center">
                 <h2 class="text-3xl font-bold mb-4">Pronto para começar?</h2>
                 <p class="text-lg mb-6">
                     Entre em contato e vamos criar a melhor plataforma educacional para sua instituição.
@@ -141,8 +142,9 @@
                 <a href="contato.php" class="inline-block bg-white text-voyia-purple font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">
                     Solicitar Orçamento
                 </a>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <?php include 'components/footer.php'; ?>

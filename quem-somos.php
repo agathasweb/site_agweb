@@ -4,26 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem Somos - Agatha's Web</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'voyia-blue': 'rgb(147, 51, 234)',
-                        'voyia-dark': '#0A0A0A',
-                        'voyia-gray': '#1A1A1A',
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="assets/css/output.css">
 </head>
 <body class="bg-gray-900 text-white min-h-screen">
     <?php include 'components/header.php'; ?>
     
     <main class="pt-20">
-        <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+        <!-- Seção 1: Título e história - fundo #000 -->
+        <section class="bg-black">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
             <div class="text-center mb-16">
                 <h1 class="text-4xl lg:text-6xl font-bold mb-6 text-voyia-blue">
                     Quem Somos
@@ -67,8 +56,12 @@
                     </ul>
                 </div>
             </div>
+        </section>
 
-            <div class="text-center mb-16">
+        <!-- Seção 2: Equipe - fundo #0A0A0A -->
+        <section class="bg-[#0A0A0A]">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-8 text-white">Nossa Equipe</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-voyia-gray rounded-lg p-6 text-center">
@@ -90,9 +83,14 @@
                         <p class="text-gray-300 text-sm">Especialista em tráfego pago e estratégias digitais.</p>
                     </div>
                 </div>
+                </div>
             </div>
+        </section>
 
-            <div class="bg-voyia-blue rounded-lg p-8 text-center">
+        <!-- Seção 3: CTA - fundo #000 -->
+        <section class="bg-black">
+            <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+                <div class="bg-voyia-blue rounded-lg p-8 text-center">
                 <h2 class="text-3xl font-bold mb-4">Vamos Trabalhar Juntos?</h2>
                 <p class="text-lg mb-6">
                     Estamos prontos para transformar suas ideias em soluções tecnológicas de sucesso.
@@ -100,8 +98,9 @@
                 <a href="contato.php" class="inline-block bg-white text-voyia-blue font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition-colors">
                     Entre em Contato
                 </a>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <?php include 'components/footer.php'; ?>

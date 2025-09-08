@@ -1,7 +1,7 @@
 <?php
 // Header Component - Reutilizável para todas as páginas
 ?>
-<header class="relative z-[9999]">
+<header class="relative z-[9999] bg-[#0A0A0A]">
     <nav class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
