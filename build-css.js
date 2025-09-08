@@ -4,8 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const postcss = require('postcss');
 
-// Importar a configuração do Tailwind
-const tailwindConfig = require('./tailwind.config.js');
+// Tailwind irá usar automaticamente o tailwind.config.js
 
 // Função para ler e processar o CSS
 async function buildCSS() {
@@ -17,7 +16,7 @@ async function buildCSS() {
         
         // Processar com PostCSS e Tailwind
         const result = await postcss([
-            require('@tailwindcss/postcss')(tailwindConfig),
+            require('tailwindcss'),
             require('autoprefixer'),
         ]).process(inputCSS, {
             from: './assets/css/input.css',
@@ -60,7 +59,7 @@ async function buildMinifiedCSS() {
         const inputCSS = fs.readFileSync('./assets/css/input.css', 'utf8');
         
         const result = await postcss([
-            require('@tailwindcss/postcss')(tailwindConfig),
+            require('tailwindcss'),
             require('autoprefixer'),
         ]).process(inputCSS, {
             from: './assets/css/input.css',

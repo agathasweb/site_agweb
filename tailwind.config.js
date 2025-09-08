@@ -3,8 +3,7 @@ module.exports = {
   content: [
     "./*.php",
     "./components/*.php",
-    "./**/*.html",
-    "./**/*.js"
+    "./**/*.html"
   ],
   darkMode: 'class',
   theme: {
