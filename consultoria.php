@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultoria - Agatha's Web</title>
+    <title>Consultoria Digital Especializada - Estratégias para Crescimento Online | Agatha's Web</title>
+    <meta name="description" content="Consultoria digital especializada para impulsionar seu negócio online. Análise de mercado, estratégias de marketing digital, otimização de processos e muito mais. Consultores experientes à sua disposição.">
+    <meta name="keywords" content="consultoria digital, estratégia online, marketing digital, consultoria empresarial, análise de mercado, crescimento digital">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://agathasweb.com.br/consultoria.php">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Consultoria Digital Especializada">
+    <meta property="og:description" content="Estratégias personalizadas para crescimento online. Consultoria digital com foco em resultados.">
+    <meta property="og:url" content="https://agathasweb.com.br/consultoria.php">
+    <meta property="og:type" content="service">
+    
     <link rel="stylesheet" href="assets/css/styles.css?v=1757309623">
 </head>
 <body class="bg-gray-900 text-white min-h-screen">

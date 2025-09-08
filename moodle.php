@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serviços Moodle - Agatha's Web</title>
+    <title>Especialistas em Moodle - Desenvolvimento, Customização e Suporte | Agatha's Web</title>
+    <meta name="description" content="Especialistas em plataforma Moodle para educação e treinamento corporativo. Desenvolvimento, customização, integração e suporte técnico completo. Transforme sua educação online com nossa expertise.">
+    <meta name="keywords" content="moodle, plataforma educacional, EAD, ensino à distância, LMS, educação corporativa, treinamento online">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://agathasweb.com.br/moodle.php">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Especialistas em Moodle - Desenvolvimento e Suporte">
+    <meta property="og:description" content="Desenvolvimento e customização de plataformas Moodle para educação e treinamento corporativo. Suporte técnico especializado.">
+    <meta property="og:url" content="https://agathasweb.com.br/moodle.php">
+    <meta property="og:type" content="service">
+    
     <link rel="stylesheet" href="assets/css/styles.css?v=1757309623">
 </head>
 <body class="bg-gray-900 text-white min-h-screen">

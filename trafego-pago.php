@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tráfego Pago - Agatha's Web</title>
+    <title>Tráfego Pago Profissional - Google Ads, Facebook e Instagram | Agatha's Web</title>
+    <meta name="description" content="Maximize seu ROI com campanhas de tráfego pago profissionais. Gestão especializada em Google Ads, Facebook Ads, Instagram e LinkedIn. ROI médio de 300% comprovado. Análise gratuita disponível.">
+    <meta name="keywords" content="tráfego pago, google ads, facebook ads, instagram ads, linkedin ads, campanhas publicitárias, ROI, marketing digital">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://agathasweb.com.br/trafego-pago.php">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tráfego Pago Profissional - ROI de 300%">
+    <meta property="og:description" content="Campanhas de tráfego pago com resultados comprovados. Google Ads, Facebook, Instagram e LinkedIn. Análise gratuita.">
+    <meta property="og:url" content="https://agathasweb.com.br/trafego-pago.php">
+    <meta property="og:type" content="service">
+    
     <link rel="stylesheet" href="assets/css/styles.css?v=1757309623">
 </head>
 <body class="bg-gray-900 text-white min-h-screen">

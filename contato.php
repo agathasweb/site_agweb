@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato - Agatha's Web</title>
+    <title>Entre em Contato - Orçamentos e Consultas Gratuitas | Agatha's Web</title>
+    <meta name="description" content="Entre em contato conosco para orçamentos gratuitos e consultas sobre nossos serviços digitais. Desenvolvimento web, Moodle, tráfego pago e consultoria. Resposta rápida garantida.">
+    <meta name="keywords" content="contato, orçamento gratuito, consulta, desenvolvimento web, suporte, atendimento">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://agathasweb.com.br/contato.php">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Entre em Contato - Orçamentos Gratuitos">
+    <meta property="og:description" content="Solicite orçamentos gratuitos para desenvolvimento web, Moodle, tráfego pago e consultoria digital.">
+    <meta property="og:url" content="https://agathasweb.com.br/contato.php">
+    <meta property="og:type" content="website">
+    
     <link rel="stylesheet" href="assets/css/styles.css?v=1757309623">
 </head>
 <body class="bg-gray-900 text-white min-h-screen">

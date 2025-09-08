@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desenvolvimento - Agatha's Web</title>
+    <title>Desenvolvimento Web Profissional - Sites, Sistemas e Aplicações | Agatha's Web</title>
+    <meta name="description" content="Desenvolvimento web profissional com tecnologias modernas. Criamos sites responsivos, sistemas personalizados e aplicações web. Expertise em PHP, JavaScript, React e muito mais. Orçamento gratuito.">
+    <meta name="keywords" content="desenvolvimento web, sites responsivos, sistemas web, aplicações, PHP, JavaScript, React, programação">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://agathasweb.com.br/desenvolvimento.php">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Desenvolvimento Web Profissional">
+    <meta property="og:description" content="Sites responsivos, sistemas personalizados e aplicações web com tecnologias modernas. Orçamento gratuito.">
+    <meta property="og:url" content="https://agathasweb.com.br/desenvolvimento.php">
+    <meta property="og:type" content="service">
+    
     <link rel="stylesheet" href="assets/css/styles.css?v=1757309623">
 </head>
 <body class="bg-gray-900 text-white min-h-screen">

@@ -3,7 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agatha's Web - Comunicação Inteligente para Empresas</title>
+    <title>Agatha's Web - Soluções Digitais Inteligentes | Desenvolvimento Web, Moodle e Tráfego Pago</title>
+    <meta name="description" content="Transforme seu negócio com soluções digitais inteligentes da Agatha's Web. Especialistas em desenvolvimento web, plataformas Moodle, tráfego pago e consultoria digital. Resultados comprovados para empresas que querem crescer online.">
+    <meta name="keywords" content="desenvolvimento web, moodle, tráfego pago, consultoria digital, marketing digital, hospedagem gerenciada, soluções empresariais">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Agatha's Web">
+    <link rel="canonical" href="https://agathasweb.com.br/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://agathasweb.com.br/">
+    <meta property="og:title" content="Agatha's Web - Soluções Digitais Inteligentes">
+    <meta property="og:description" content="Especialistas em desenvolvimento web, Moodle, tráfego pago e consultoria digital. Transforme seu negócio com nossas soluções inteligentes.">
+    <meta property="og:image" content="https://agathasweb.com.br/assets/logo_white.png">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Agatha's Web">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://agathasweb.com.br/">
+    <meta property="twitter:title" content="Agatha's Web - Soluções Digitais Inteligentes">
+    <meta property="twitter:description" content="Especialistas em desenvolvimento web, Moodle, tráfego pago e consultoria digital. Transforme seu negócio com nossas soluções inteligentes.">
+    <meta property="twitter:image" content="https://agathasweb.com.br/assets/logo_white.png">
+    
     <link rel="icon" type="image/png" href="assets/favicon.png">
     
     <!-- Preload recursos críticos -->
@@ -12,6 +34,71 @@
     <link rel="preload" href="assets/js/menu.js" as="script">
     
     <link rel="stylesheet" href="assets/css/styles.css?v=1757309623">
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Agatha's Web",
+        "description": "Soluções digitais inteligentes para empresas - Desenvolvimento web, Moodle, tráfego pago e consultoria digital",
+        "url": "https://agathasweb.com.br",
+        "logo": "https://agathasweb.com.br/assets/logo_white.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Atendimento ao Cliente",
+            "availableLanguage": "Portuguese"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BR",
+            "addressLocality": "Brasil"
+        },
+        "sameAs": [
+            "https://linkedin.com/company/agathasweb",
+            "https://instagram.com/agathasweb"
+        ],
+        "offers": [
+            {
+                "@type": "Service",
+                "name": "Desenvolvimento Web",
+                "description": "Sites responsivos e sistemas personalizados",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Agatha's Web"
+                }
+            },
+            {
+                "@type": "Service", 
+                "name": "Plataforma Moodle",
+                "description": "Desenvolvimento e customização de plataformas educacionais",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Agatha's Web"
+                }
+            },
+            {
+                "@type": "Service",
+                "name": "Tráfego Pago",
+                "description": "Gestão profissional de campanhas publicitárias online",
+                "provider": {
+                    "@type": "Organization", 
+                    "name": "Agatha's Web"
+                }
+            },
+            {
+                "@type": "Service",
+                "name": "Consultoria Digital",
+                "description": "Estratégias personalizadas para crescimento online",
+                "provider": {
+                    "@type": "Organization",
+                    "name": "Agatha's Web"
+                }
+            }
+        ]
+    }
+    </script>
+    
     <style>
         /* Animações personalizadas */
         @keyframes float {
