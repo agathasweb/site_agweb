@@ -1,7 +1,21 @@
 # Forçar content-type correto para arquivos CSS
 <Files "*.css">
-    Header always set Content-Type "text/css"
-    Header always set Cache-Control "public, max-age=31536000"
+    Header always set Content-Type "text/css; charset=utf-8"
+    Header always set Cache-Control "public, max-age=31536000, immutable"
+    Header always set Vary "Accept-Encoding"
+    
+    # Compressão
+    <IfModule mod_deflate.c>
+        SetOutputFilter DEFLATE
+    </IfModule>
+    
+    # Gzip
+    <IfModule mod_gzip.c>
+        mod_gzip_on Yes
+        mod_gzip_dechunk Yes
+        mod_gzip_item_include file \.(css)$
+        mod_gzip_item_include mime ^text/css$
+    </IfModule>
 </Files>
 
 # Adicionar content-type no AddType também

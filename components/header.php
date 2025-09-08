@@ -6,7 +6,7 @@
         <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
                 <div class="flex-shrink-0">
-                    <img src="assets/logo_white.png" alt="Agatha's Web" class="h-8 lg:h-10 w-auto">
+                    <img src="assets/logo_white.png" alt="Agatha's Web" class="h-8 lg:h-10 w-auto" loading="eager" width="auto" height="40" style="max-height: 2.5rem;">
                 </div>
             </div>
             
@@ -143,50 +143,6 @@
         </div>
     </nav>
     
-    <!-- JavaScript para controle do menu mobile -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const blogButton = document.getElementById('mobile-blog-button');
-            const blogMenu = document.getElementById('mobile-blog-menu');
-            const blogIcon = document.getElementById('mobile-blog-icon');
-            const servicesButton = document.getElementById('mobile-services-button');
-            const servicesMenu = document.getElementById('mobile-services-menu');
-            const servicesIcon = document.getElementById('mobile-services-icon');
-            const productsButton = document.getElementById('mobile-products-button');
-            const productsMenu = document.getElementById('mobile-products-menu');
-            const productsIcon = document.getElementById('mobile-products-icon');
-
-            // Toggle menu principal mobile
-            mobileMenuButton.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            // Toggle submenu Blog
-            blogButton.addEventListener('click', function() {
-                blogMenu.classList.toggle('hidden');
-                blogIcon.classList.toggle('rotate-180');
-            });
-
-            // Toggle submenu Serviços
-            servicesButton.addEventListener('click', function() {
-                servicesMenu.classList.toggle('hidden');
-                servicesIcon.classList.toggle('rotate-180');
-            });
-
-            // Toggle submenu Produtos
-            productsButton.addEventListener('click', function() {
-                productsMenu.classList.toggle('hidden');
-                productsIcon.classList.toggle('rotate-180');
-            });
-
-            // Fechar menu ao clicar fora
-            document.addEventListener('click', function(e) {
-                if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-    </script>
+    <!-- JavaScript otimizado para menu mobile -->
+    <script src="assets/js/menu.js" defer></script>
 </header>

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agatha's Web - Comunicação Inteligente para Empresas</title>
     <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <!-- Preload recursos críticos -->
+    <link rel="preload" href="assets/css/styles.css?v=1757309623" as="style">
+    <link rel="preload" href="assets/logo_white.png" as="image">
+    <link rel="preload" href="assets/js/menu.js" as="script">
+    
     <link rel="stylesheet" href="assets/css/styles.css?v=1757309623">
     <style>
         /* Animações personalizadas */
@@ -414,5 +420,8 @@
             typeWriter();
         });
     </script>
+    
+    <!-- Scripts otimizados para performance -->
+    <script src="assets/js/lazy-loading.js" defer></script>
 </body>
 </html>

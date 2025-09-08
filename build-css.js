@@ -14,7 +14,7 @@ async function buildCSS() {
         // Ler o arquivo de entrada
         const inputCSS = fs.readFileSync('./assets/css/input.css', 'utf8');
         
-        // Processar com PostCSS e Tailwind
+        // Processar com PostCSS e Tailwind (sem PurgeCSS por enquanto)
         const result = await postcss([
             require('tailwindcss'),
             require('autoprefixer'),
