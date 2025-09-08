@@ -83,7 +83,29 @@ npm install || error "Erro na instalação das dependências"
 # 9. Verificar se build-css.js foi atualizado corretamente
 log "Verificando arquivo de build..."
 if ! grep -q "styles.css" build-css.js; then
-    error "build-css.js não foi atualizado corretamente. Verifique o repositório Git."
+    error "build-css.js não foi atualizado corretamente!"
+    warning "Tentando corrigir automaticamente..."
+    
+    # Tentar baixar a versão correta diretamente do GitHub
+    if command -v curl &> /dev/null; then
+        info "Baixando build-css.js correto do repositório..."
+        curl -s -f "https://raw.githubusercontent.com/agathasweb/site_agweb/master/build-css.js" > build-css.js.new
+        
+        if [ -s build-css.js.new ] && grep -q "styles.css" build-css.js.new; then
+            mv build-css.js.new build-css.js
+            info "build-css.js corrigido automaticamente!"
+        else
+            rm -f build-css.js.new
+            error "Não foi possível corrigir build-css.js automaticamente"
+        fi
+    else
+        error "curl não disponível para correção automática"
+    fi
+    
+    # Verificar novamente
+    if ! grep -q "styles.css" build-css.js; then
+        error "build-css.js ainda não está correto. Execute: git reset --hard origin/master"
+    fi
 fi
 
 # 10. Compilar CSS
@@ -142,3 +164,8 @@ log "Se o layout ainda estiver quebrado, verifique:"
 log "1. Se o servidor web está servindo arquivos CSS corretamente"
 log "2. Se não há cache no navegador (Ctrl+F5)"
 log "3. Se as permissões dos arquivos estão corretas"
+echo
+warning "📋 Se problemas persistem, execute:"
+warning "   ./debug-deploy.sh    # Para diagnóstico completo"
+warning "   ./deploy.sh --debug  # Para logs detalhados"
+echo
