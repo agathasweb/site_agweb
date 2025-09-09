@@ -1,8 +1,8 @@
 <?php
 // Header Component - Reutilizável para todas as páginas
 ?>
-<header class="relative z-[9999] bg-[#0A0A0A]">
-    <nav class="mx-auto max-w-7xl px-6 lg:px-8">
+<header class="relative z-[9999] bg-[#0A0A0A]" role="banner">
+    <nav class="mx-auto max-w-7xl px-6 lg:px-8" aria-label="Navegação principal">
         <div class="flex h-16 items-center justify-between">
             <div class="flex items-center">
                 <div class="flex-shrink-0">
@@ -17,9 +17,9 @@
                     
                     <!-- Menu Blog com dropdown -->
                     <div class="relative group">
-                        <button class="text-gray-300 hover:text-white transition-colors font-bold flex items-center gap-1">
+                        <button class="text-gray-300 hover:text-white transition-colors font-bold flex items-center gap-1" aria-label="Abrir menu Blog" aria-expanded="false" aria-haspopup="true">
                             Blog
-                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
@@ -35,9 +35,9 @@
                     
                     <!-- Menu Serviços com dropdown -->
                     <div class="relative group">
-                        <button class="text-gray-300 hover:text-white transition-colors font-bold flex items-center gap-1">
+                        <button class="text-gray-300 hover:text-white transition-colors font-bold flex items-center gap-1" aria-label="Abrir menu Serviços" aria-expanded="false" aria-haspopup="true">
                             Serviços
-                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
@@ -53,9 +53,9 @@
                     
                     <!-- Menu Produtos com dropdown -->
                     <div class="relative group">
-                        <button class="text-gray-300 hover:text-white transition-colors font-bold flex items-center gap-1">
+                        <button class="text-gray-300 hover:text-white transition-colors font-bold flex items-center gap-1" aria-label="Abrir menu Produtos" aria-expanded="false" aria-haspopup="true">
                             Produtos
-                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                             </svg>
                         </button>
@@ -76,8 +76,8 @@
             
             <!-- Botão Hamburger Mobile -->
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-gray-300 hover:text-white transition-colors p-2">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <button id="mobile-menu-button" class="text-gray-300 hover:text-white transition-colors p-2" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
                 </button>
@@ -85,15 +85,15 @@
         </div>
         
         <!-- Menu Mobile -->
-        <div id="mobile-menu" class="hidden md:hidden bg-voyia-gray rounded-lg mt-2 border border-gray-600 shadow-xl">
+        <nav id="mobile-menu" class="hidden md:hidden bg-voyia-gray rounded-lg mt-2 border border-gray-600 shadow-xl" aria-label="Menu de navegação mobile">
             <div class="px-4 py-2 space-y-1">
                 <a href="/" class="block text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded transition-colors">Página Inicial</a>
                 
                 <!-- Blog Mobile -->
                 <div class="relative">
-                    <button id="mobile-blog-button" class="w-full text-left text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded transition-colors flex items-center justify-between">
+                    <button id="mobile-blog-button" class="w-full text-left text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded transition-colors flex items-center justify-between" aria-label="Expandir menu Blog" aria-expanded="false" aria-controls="mobile-blog-menu">
                         Blog
-                        <svg class="w-4 h-4 transition-transform" id="mobile-blog-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 transition-transform" id="mobile-blog-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
@@ -107,9 +107,9 @@
                 
                 <!-- Serviços Mobile -->
                 <div class="relative">
-                    <button id="mobile-services-button" class="w-full text-left text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded transition-colors flex items-center justify-between">
+                    <button id="mobile-services-button" class="w-full text-left text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded transition-colors flex items-center justify-between" aria-label="Expandir menu Serviços" aria-expanded="false" aria-controls="mobile-services-menu">
                         Serviços
-                        <svg class="w-4 h-4 transition-transform" id="mobile-services-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 transition-transform" id="mobile-services-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
@@ -123,9 +123,9 @@
                 
                 <!-- Produtos Mobile -->
                 <div class="relative">
-                    <button id="mobile-products-button" class="w-full text-left text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded transition-colors flex items-center justify-between">
+                    <button id="mobile-products-button" class="w-full text-left text-gray-300 hover:text-white hover:bg-gray-700 px-3 py-2 rounded transition-colors flex items-center justify-between" aria-label="Expandir menu Produtos" aria-expanded="false" aria-controls="mobile-products-menu">
                         Produtos
-                        <svg class="w-4 h-4 transition-transform" id="mobile-products-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg class="w-4 h-4 transition-transform" id="mobile-products-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>

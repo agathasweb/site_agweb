@@ -1,7 +1,7 @@
 <?php
 // Footer Component - Reutilizável para todas as páginas
 ?>
-<footer class="bg-voyia-gray">
+<footer class="bg-voyia-gray" role="contentinfo">
     <div class="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-12 text-center lg:text-left">
             <div class="lg:col-span-3">

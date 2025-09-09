@@ -27,7 +27,8 @@
         // Toggle menu principal
         elements.mobileMenuButton.addEventListener('click', function(e) {
             e.preventDefault();
-            elements.mobileMenu.classList.toggle('hidden');
+            const isExpanded = elements.mobileMenu.classList.toggle('hidden');
+            elements.mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
         });
         
         // Toggle submenus
@@ -41,7 +42,8 @@
             if (button && menu && icon) {
                 button.addEventListener('click', function(e) {
                     e.preventDefault();
-                    menu.classList.toggle('hidden');
+                    const isExpanded = menu.classList.toggle('hidden');
+                    button.setAttribute('aria-expanded', !isExpanded);
                     icon.classList.toggle('rotate-180');
                 });
             }
