@@ -38,6 +38,29 @@
 - Força correção de arquivos
 - Recompila tudo
 
+### 4. `./fix-production.sh` - Correção Específica Produção
+```bash
+./fix-production.sh
+```
+**Quando usar:** Arquivos 404, JavaScript não carregando, layout quebrado
+
+**O que faz:**
+- Cria arquivos JavaScript ausentes
+- Verifica/recompila CSS
+- Configura .htaccess
+- Corrige permissões
+
+### 5. `./test-urls.sh` - Teste de URLs
+```bash
+./test-urls.sh
+```
+**Quando usar:** Verificar se arquivos estão acessíveis via HTTP
+
+**O que faz:**
+- Testa todos os arquivos críticos
+- Verifica Content-Type headers
+- Identifica arquivos 404
+
 ## 🔧 Fluxo Recomendado
 
 ### ✅ Deploy Normal
@@ -57,6 +80,20 @@ git pull
 
 # 3. Verificar resultado
 ./debug-deploy.sh
+```
+
+### 🚨 Arquivos 404 (JavaScript/CSS não carregando)
+```bash
+# 1. Testar URLs primeiro
+./test-urls.sh
+
+# 2. Correção específica para produção
+./fix-production.sh
+
+# 3. Testar novamente
+./test-urls.sh
+
+# 4. Testar em modo anônimo do navegador
 ```
 
 ## 🎯 Principais Problemas e Soluções
